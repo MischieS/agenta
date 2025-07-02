@@ -48,7 +48,7 @@ echo -e "\n${YELLOW}📦 Optimizing for production...${NC}"
 cp -r .next/standalone "$DEPLOY_DIR/.next/"
 cp -r .next/static "$DEPLOY_DIR/.next/"
 cp -r public "$DEPLOY_DIR/"
-cp package.json next.config.mjs "$DEPLOY_DIR/"
+cp package.json next.config.js "$DEPLOY_DIR/"
 
 # Create minimal production-only package.json
 cat > "$DEPLOY_DIR/package.json" << 'EOL'
